@@ -14,7 +14,6 @@ body {
 
 header {
     display: flex;
-    
     height: 5%;
     align-items: center;
     gap: 20px;
@@ -100,4 +99,44 @@ main button {
     width: 100%;
     max-width: 300px;
     text-align: left;
+}
+
+@media (max-width: 600px) {
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container-img {
+        justify-content: center;
+        
+    }
+
+    .container-info {
+        
+        align-items: center;
+        text-align: center;
+    }
+
+    main button {
+        height: 8%;
+    }
+
+    header {
+        background-color: lime;
+        margin: 20px 0 0 0;
+        display: none;
+    }
+
+    .container-info h1 {
+        font-size: 3em;
+    }
+
+    .container-info h2 {
+        font-size: 1.5em;
+    }
+
 }
